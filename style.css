@@ -1,0 +1,73 @@
+body{
+    /* for removing default margin */
+    margin: 0;
+    font-family: sans-serif;
+    /* for bringing everything to the center */
+    display: flex;
+    /* everything to went next to each other */
+    flex-direction: column;
+      /* for bringing everything to the center horizontally */
+      align-items: center;
+      /* to bring everything in center vertically */
+      /* height 100% of the viewport height */
+      height: 100vh;
+      /* to bring everything in center vertically */
+      justify-content: center;
+      /* adding the background image */
+      background: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      background-size: cover;
+      overflow: hidden;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin: 5px;
+    position: relative;
+
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background: greenyellow;
+    /* lighter */
+    opacity: .8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    /* text shadow: horizontal vertical blur color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+} 
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkgreen;
+    opacity: 0.8;
+}
+
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: brown;
+}
